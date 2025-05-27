@@ -6,7 +6,7 @@ The AI-Powered Cloud Platform provides intelligent cloud resource optimization a
 
 ## High-Level Architecture
 
-![High-Level Architecture](docs/images/Atlan_AI.drawio.png)
+![High-Level Architecture](images/Atlan_AI.drawio.png)
 
 The system consists of the following major components:
 
@@ -21,7 +21,7 @@ The system consists of the following major components:
 
 ### 2. Data Collection Pipeline
 
-![Data Pipeline](docs/images/Atlan_data.drawio.png)
+![Data Pipeline](images/Atlan_data.drawio.png)
 
 - **Data Collector Service**:
     - REST API endpoints for metrics ingestion
