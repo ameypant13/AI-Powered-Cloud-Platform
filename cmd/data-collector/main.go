@@ -10,6 +10,7 @@ import (
 
 func main() {
 	promEndpoint := os.Getenv("PROM_ENDPOINT")
+	fmt.Println("Using Prometheus endpoint:", promEndpoint)
 	prom, err := prometheus.NewPrometheusFetcher(promEndpoint)
 	if err != nil {
 		panic(err)

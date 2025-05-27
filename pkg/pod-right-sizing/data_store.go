@@ -1,8 +1,6 @@
-package pkg
+package pod_right_sizing
 
-import "github.com/ameypant13/AI-Powered-Cloud-Platform/pkg/pod-right-sizing"
-
-var SamplePods = []pod_right_sizing.PodMetrics{
+var SamplePods = []PodMetrics{
 	{
 		PodName:           "api-service-1",
 		Namespace:         "team1",

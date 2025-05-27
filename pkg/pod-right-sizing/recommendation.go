@@ -1,7 +1,6 @@
 package pod_right_sizing
 
 import (
-	"github.com/ameypant13/AI-Powered-Cloud-Platform/pkg"
 	"net/http"
 	"strings"
 
@@ -25,7 +24,7 @@ func GetRecommendations(c *gin.Context) {
 	}
 
 	var recos []RightSizingRecommendation
-	for _, pod := range pkg.samplePods {
+	for _, pod := range SamplePods {
 		if strings.EqualFold(pod.Namespace, namespace) {
 			reco := RecommendRightSize(pod, config)
 			recos = append(recos, reco)

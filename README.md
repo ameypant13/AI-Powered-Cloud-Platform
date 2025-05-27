@@ -40,17 +40,25 @@ This project demonstrates an AI-driven approach to cloud resource optimization b
    ```
    export PROM_ENDPOINT=http://your-prometheus:9090
    ```
-3. Build and run:
+3. Build and run the API server:
    ```
-   go build
-   ./AI-Powered-Cloud-Platform
+   go build -o api-server ./cmd/api-server ./api-server
    ```
+4. In a separate terminal, build and run the data collector
+    ```
+    go build -o data-collector ./cmd/data-collector ./data-collector
+    ```
 
 ## API Usage
 
 Get recommendations:
 ```
 GET /api/v1/recommendations?namespace=team1
+```
+
+Example using curl:
+```bash
+curl -X GET "http://localhost:8080/api/v1/recommendations?namespace=team1"
 ```
 
 Health check:
